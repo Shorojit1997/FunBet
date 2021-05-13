@@ -1,0 +1,23 @@
+.setting_btn{
+    width: 120px!important;
+    background:rgb(241, 241, 241);
+    margin:5px;
+}
+.setting_btn:hover{
+    background:rgb(226, 226, 226);
+}
+.setting_input{
+    width: 100%;
+    padding: 8px;
+    border:1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+.settings_label{
+    width: 100%;
+    text-align: left;
+    color:rgb(109, 108, 108);
+    font-weight:400;
+}
+.ck-editor__editable {
+    min-height: 220px !important;
+}

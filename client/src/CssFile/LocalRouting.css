@@ -1,0 +1,22 @@
+.row_div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.left_div{
+    flex: 20%;
+    width:20%;
+    margin: 5px;
+}
+.middle_div{
+    flex: 80%;
+    width: 80%;
+    margin: 5px;
+}
+.right_div{
+    flex: 20%;
+    width: 20%;
+    margin:5px
+}

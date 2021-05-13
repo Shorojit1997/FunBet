@@ -1,0 +1,52 @@
+._card{
+    position: absolute;
+    background-color: none;
+}
+.deck{
+    position: relative;
+    width: 65px;
+    height: 115px;
+    border:1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.deck_before{
+    position: absolute;
+    top: .5rem;
+    font-size: 15px;
+    left: .5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.deck_after{
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+    font-size: 15px;
+    transform: rotate(180deg);
+    font-family: 'Times New Roman', Times, serif;
+}
+.deck_middle{
+    font-size: 60px;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.empty_deck{
+    position: relative;
+    width: 95px;
+    height: 160px;
+    border:1px solid black;
+    background-color: rgb(60, 192, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}

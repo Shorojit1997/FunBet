@@ -1,0 +1,8 @@
+.admin_footer{
+    width: 100%;
+    background: white;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}

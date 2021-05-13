@@ -1,0 +1,48 @@
+.bet_main{
+    /* background: #182137; */
+    border-radius: 10px ;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    margin:10px;
+    background: transparent;
+}
+
+.bet_div{
+    position: relative;
+    display: flex;
+    width:100%;
+    overflow:auto;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bet_header{
+    width: 100%;
+    color: black;
+    padding: 10px ;
+    text-align: left;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    border-bottom: 1px solid rgb(190, 189, 189);
+
+}
+.bet_footer{
+    padding: 10px ;
+    text-align: left;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    border-top: 1px solid rgb(190, 189, 189);
+}
+
+
+@media only screen and (max-width: 980px) {
+    .bet_main{
+        margin:1px;
+    }
+
+}

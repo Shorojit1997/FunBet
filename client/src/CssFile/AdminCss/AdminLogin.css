@@ -1,0 +1,76 @@
+.admin_deposit_main{
+    width: 100%;
+    min-height: 800px;
+    background: #182137;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.admin_deposit_div{
+    position: relative;
+    display: flex;
+    width: 500px;
+    margin: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(235, 213, 23);
+    border-radius: 10px;
+}
+.admin_deposit_header{
+    color: white;
+    padding: 20px ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+
+}
+.admin_select_style_set{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    height: 45px;
+}
+.admin_input_style_set{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    border:none;
+    height: 45px;
+}
+.admin_button_style_set{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    height: 45px;
+    border:none;
+    background: rgb(235, 213, 23);
+
+}
+.admin_checkbox_input_rem{
+    width: 90%;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.admin_checkbox_input_rem input{
+    width: 20px;
+    height: 20px;
+}
+.admin_checkbox_input_rem label{
+    margin: 3px;
+    color: white;
+    font-size: 18px;
+}
+.admin_have_account{
+    color: white;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

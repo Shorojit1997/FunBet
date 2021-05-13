@@ -1,0 +1,9 @@
+.not_found{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.not_found_text{
+    color: white;
+}

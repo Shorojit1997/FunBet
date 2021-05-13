@@ -1,0 +1,60 @@
+
+
+module.exports = (user) => {
+    const { name, phone, email, username, password, confirmPassword, clubName, sponsorName } = user;
+    let error = {}
+    if (!name) {
+        error.name = 'Name can not be empty...'
+    }
+    else if (name.length < 3 || name.length > 20) {
+        error.name = 'Name must be 3 to 20 character...'
+    }
+
+    if (!phone) {
+        error.phone = 'Please provide your phone number...'
+    }
+    else if (phone.length < 8 || phone.length > 14) {
+        error.phone = 'Phone number must be 8 to 14 number...'
+    }
+
+    if (!email) {
+        error.email = 'Email can not be empty...'
+    }
+    else if (email.length < 7 || email.length > 30) {
+        error.email = 'Name must be 7 to 30 character...'
+    }
+
+    if (!username) {
+        error.username = 'Username can not be empty...'
+    }
+    else if (username.length < 3 || username.length > 20) {
+        error.username = 'Username must be 3 to 20 character...'
+    }
+
+    if (password) {
+        if (password.length < 6 || password.length > 30) {
+            error.password = 'Password must be 6 to 30 character...'
+        }
+
+        if (!confirmPassword) {
+            error.confirmPassword = 'Confirmpassword can not be empty...'
+        }
+        else if (confirmPassword.length < 6 || confirmPassword.length > 30) {
+            error.confirmPassword = 'Password must be 6 to 30 character...'
+        }
+        else if (password !== confirmPassword) {
+            error.confirmPassword = 'Password doesn\'t match...'
+        }
+    }
+
+    if (!clubName) {
+        error.clubName = 'Club name can not be empty...'
+    }
+    if (sponsorName)
+        if (sponsorName.length < 6 || sponsorName.length > 30) {
+            error.clubName = 'Sponsor name must be 6 to 30 character...'
+        }
+
+    return error;
+
+}

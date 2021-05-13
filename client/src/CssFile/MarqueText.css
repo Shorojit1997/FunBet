@@ -1,0 +1,51 @@
+
+.marquee_text{
+    min-height: 30px;
+    width: 100%;
+    overflow: hidden;
+    background-color:transparent;
+}
+
+.marquee_text marquee{
+    color: rgb(250, 250, 250);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.marquee_text p {
+    color: white;
+    position: absolute;
+    width:200%;
+    margin: 0;
+    padding: 10px 0px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: example1 25s linear infinite;
+    -webkit-animation: example1 25s linear infinite;
+    animation: example1 25s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes example1 {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes example1 {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes example1 {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }
